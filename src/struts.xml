@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <!--<constant name="struts.custom.i18n.resources" value="jpetstore"></constant>-->
+
+    <package name="default" namespace="/" extends="struts-default">
+
+        <interceptors>
+            <interceptor name="logInterceptor" class="com.maxiaolong.jpetstore.interceptor.LogInterceptor" />
+
+            <interceptor name="userInterceptor" class="com.maxiaolong.jpetstore.interceptor.UserInterceptor"/>
+
+            <interceptor-stack name="log" >
+                <interceptor-ref name="logInterceptor"></interceptor-ref>
+                <interceptor-ref name="defaultStack"></interceptor-ref>
+            </interceptor-stack>
+
+            <interceptor-stack name="default">
+                <interceptor-ref name="userInterceptor"></interceptor-ref>
+                <interceptor-ref name="logInterceptor"></interceptor-ref>
+                <interceptor-ref name="defaultStack"></interceptor-ref>
+            </interceptor-stack>
+        </interceptors>
+
+        <default-interceptor-ref name="default"></default-interceptor-ref>
+
+        <global-results>
+            <result name="nouser">userLogin.jsp</result>
+        </global-results>
+
+        <action name="user_*" class="com.maxiaolong.jpetstore.action.UserAction" method="{1}">
+            <interceptor-ref name="log"></interceptor-ref>
+            <result name="index" type="redirect">index.jsp</result>
+        </action>
+
+        <action name="product_*" class="com.maxiaolong.jpetstore.action.ProductAction" method="{1}">
+            <result name="catid_success">product.jsp</result>
+            <result name="itemid_success">singleItem.jsp</result>
+        </action>
+
+        <action name="orders_*" class="com.maxiaolong.jpetstore.action.OrderAction" method="{1}">
+            <result name="cart_success">cart.jsp</result>
+            <result name="index_success" type="redirect">index.jsp</result>
+        </action>
+
+    </package>
+
+    <package name="jsonAction" extends="json-default">
+
+        <action name="check*" class="com.maxiaolong.jpetstore.action.UserAction" method="check{1}">
+            <result type="json" name="used">
+                <param name="root">map</param>
+            </result>
+            <result type="json" name="unused">
+                <param name="root">map</param>
+            </result>
+        </action>
+
+        <action name="getItemByProductId" class="com.maxiaolong.jpetstore.action.ProductAction"
+                method="getItemByProductId">
+            <result type="json" name="success">
+                <param name="root">itemList</param>
+            </result>
+        </action>
+
+        <action name="reviseOrder" class="com.maxiaolong.jpetstore.action.OrderAction" method="reviseOrder">
+            <result type="json" name="success">
+                <param name="root">totalValue</param>
+            </result>
+        </action>
+
+        <action name="searchItem" class="com.maxiaolong.jpetstore.action.ProductAction" method="searchItem">
+            <result type="json" name="success">
+                <param name="root">itemList</param>
+            </result>
+        </action>
+
+        <action name="picture" class="com.maxiaolong.jpetstore.action.VRAction" method="img">
+        </action>
+
+        <action name="vr" class="com.maxiaolong.jpetstore.action.VRAction" method="vr">
+            <result type="json" name="success">
+                <param name="root">result</param>
+            </result>
+        </action>
+    </package>
+</struts>
