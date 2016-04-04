@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6956cc7e-a081-49a4-ac38-64c8c8bf7b78" name="Default" comment="" />
+    <list default="true" id="6956cc7e-a081-49a4-ac38-64c8c8bf7b78" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="JPetStore.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -192,12 +194,12 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="cart.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/cart.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34388646">
-              <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.7860262">
+              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -281,13 +283,13 @@
         <option value="$PROJECT_DIR$/src/com/maxiaolong/jpetstore/domain/User.java" />
         <option value="$PROJECT_DIR$/web/OtherJs/header.js" />
         <option value="$PROJECT_DIR$/web/product.jsp" />
-        <option value="$PROJECT_DIR$/web/cart.jsp" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/singleItem.jsp" />
         <option value="$PROJECT_DIR$/src/com/maxiaolong/jpetstore/action/OrderAction.java" />
         <option value="$PROJECT_DIR$/src/struts.xml" />
         <option value="$PROJECT_DIR$/src/com/maxiaolong/jpetstore/action/VRAction.java" />
         <option value="$PROJECT_DIR$/web/userLogin.jsp" />
+        <option value="$PROJECT_DIR$/web/cart.jsp" />
       </list>
     </option>
   </component>
@@ -334,7 +336,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -427,8 +428,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1339,6 +1341,7 @@
       <workItem from="1459675534716" duration="2959000" />
       <workItem from="1459680358561" duration="737000" />
       <workItem from="1459781725851" duration="148000" />
+      <workItem from="1459782227100" duration="93000" />
     </task>
     <task id="LOCAL-00001" summary="-test 只是一句注释">
       <created>1459091472432</created>
@@ -1448,7 +1451,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="304568000" />
+    <option name="totallyTimeSpent" value="304661000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1461,7 +1464,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1916" y="-1084" width="1928" height="1088" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32883817" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1587,6 +1590,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/cart.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/maxiaolong/jpetstore/domain/Category.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1913,8 +1924,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/cart.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34388646">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.7860262">
+          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
           <folding />
         </state>
       </provider>
