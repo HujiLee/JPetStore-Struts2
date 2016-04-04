@@ -38,8 +38,8 @@
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" scope="PROVIDED" name="TomCat-9.0" level="project" />
-    <orderEntry type="module-library" exported="" scope="PROVIDED">
+    <orderEntry type="library" exported="" scope="PROVIDED" name="Tomcat 8.0.15" level="application_server_libraries" />
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="file://$MODULE_DIR$/web/WEB-INF/lib" />

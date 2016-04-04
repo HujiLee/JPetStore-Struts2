@@ -2,7 +2,7 @@
 <c3p0-config>
     <named-config name="mvcapp">
         <property name="user">root</property>
-        <property name="password">mxl18338696535</property>
+        <property name="password">anime65</property>
         <property name="driverClass">com.mysql.jdbc.Driver</property>
         <property name="jdbcUrl">jdbc:mysql:///jpetstore</property>
 

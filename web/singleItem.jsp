@@ -95,7 +95,7 @@
             width: 300px;
             display: block;
             font-size: 40px;
-            color: #E42F4F;
+            color: #B6446D;
         }
         div.buy-it input{
 
@@ -170,7 +170,7 @@
         <div class="buy-it">
             $<%=item.getListprice()%><br>
             <P>
-                Qty:<br><input id="<%=item.getItemid()%>+quatity" type="number" min="0"
+                Qty:<br><input id="<%=item.getItemid()%>+quatity" type="number" min="1"
                                value="1" onblur="addOrPurchase
                     ('<%=item.getItemid()%>','<%=item.getItemid()%>+quatity','<%=item.getItemid()%>+addToCart','<%=item.getItemid()%>+purchase')">
             </P>

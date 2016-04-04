@@ -106,7 +106,10 @@ public class OrderAction extends ActionSupport {
     public String deleteOrder() throws Exception{
         String ordersid = ((User)ActionContext.getContext().getSession().get("userinfo")).getUserid();
         ordersDAO.delete(ordersid, orders.getItemid());
-        double totalValue = ordersDAO.getTotalValue(ordersid);
+        double totalValue=0.0;
+        if(ordersDAO.getTotalValue(ordersid)!=null){
+        totalValue = ordersDAO.getTotalValue(ordersid);}
+
         ((Map)ActionContext.getContext().get("request")).put("totalValue", totalValue);
         ((Map)ActionContext.getContext().get("request")).put("cart", ordersDAO.getAllOders(ordersid));
         String dowhat="删除itemid="+orders.getItemid()+"的订单";

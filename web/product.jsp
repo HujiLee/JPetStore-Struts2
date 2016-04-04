@@ -236,7 +236,7 @@
         div[productid][itemid]>price{
             font-size: 47px;
             line-height: 140px;
-            color: #E42F4F;
+            color: #B6446D;
 
         }
         div[productid][itemid]>desc{
