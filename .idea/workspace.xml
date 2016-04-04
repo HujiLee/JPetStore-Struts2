@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6956cc7e-a081-49a4-ac38-64c8c8bf7b78" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JPetStore.iml" afterPath="$PROJECT_DIR$/JPetStore.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/c3p0-config.xml" afterPath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/c3p0-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/c3p0-config.xml" afterPath="$PROJECT_DIR$/src/c3p0-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/maxiaolong/jpetstore/action/OrderAction.java" afterPath="$PROJECT_DIR$/src/com/maxiaolong/jpetstore/action/OrderAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/c3p0-config.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/c3p0-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/cart.jsp" afterPath="$PROJECT_DIR$/web/cart.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/product.jsp" afterPath="$PROJECT_DIR$/web/product.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/singleItem.jsp" afterPath="$PROJECT_DIR$/web/singleItem.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/cart.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/cart.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/product.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/product.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/singleItem.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/singleItem.jsp" />
     </list>
     <ignored path="JPetStore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -222,7 +216,7 @@
           <file leaf-file-name="singleItem.jsp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/singleItem.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.37628865">
+                <state vertical-scroll-proportion="0.3815331">
                   <caret line="132" column="50" selection-start-line="132" selection-start-column="50" selection-end-line="132" selection-end-column="50" />
                   <folding />
                 </state>
@@ -236,7 +230,7 @@
           <file leaf-file-name="cart.jsp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/cart.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.34536082">
+                <state vertical-scroll-proportion="-0.35017422">
                   <caret line="105" column="43" selection-start-line="105" selection-start-column="43" selection-end-line="105" selection-end-column="43" />
                   <folding />
                 </state>
@@ -355,10 +349,9 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="y" value="-4" />
-    <option name="width" value="1928" />
-    <option name="height" value="922" />
+    <option name="x" value="1228" />
+    <option name="width" value="692" />
+    <option name="height" value="914" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -1455,7 +1448,7 @@
       <workItem from="1459675534716" duration="2959000" />
       <workItem from="1459680358561" duration="737000" />
       <workItem from="1459691648789" duration="2293000" />
-      <workItem from="1459770302056" duration="8530000" />
+      <workItem from="1459770302056" duration="8766000" />
     </task>
     <task id="LOCAL-00001" summary="-test 只是一句注释">
       <created>1459091472432</created>
@@ -1529,7 +1522,13 @@
       <option name="project" value="LOCAL" />
       <updated>1459661183311</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="==Cart .jsp">
+      <created>1459781403299</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1459781403299</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1565,7 +1564,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="315243000" />
+    <option name="totallyTimeSpent" value="315479000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1577,7 +1576,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1928" height="922" extended-state="6" />
+    <frame x="1228" y="0" width="692" height="914" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1587,12 +1586,12 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33709982" sideWeight="0.16243194" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32780084" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.047974415" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.140625" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41622576" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20921545" sideWeight="0.83756804" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21132076" sideWeight="0.83756804" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32883817" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22547974" sideWeight="0.8250591" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6609375" sideWeight="0.8250591" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22128557" sideWeight="0.1749409" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1665,7 +1664,8 @@
     <MESSAGE value="==完成前端框架整合Struts2 实现相应的ajax、action、interceptor" />
     <MESSAGE value="==删除不用的servelet" />
     <MESSAGE value="==" />
-    <option name="LAST_COMMIT_MESSAGE" value="==" />
+    <MESSAGE value="==Cart .jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="==Cart .jsp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2023,7 +2023,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/singleItem.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37628865">
+        <state vertical-scroll-proportion="0.3815331">
           <caret line="132" column="50" selection-start-line="132" selection-start-column="50" selection-end-line="132" selection-end-column="50" />
           <folding />
         </state>
@@ -2047,7 +2047,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/cart.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.34536082">
+        <state vertical-scroll-proportion="-0.35017422">
           <caret line="105" column="43" selection-start-line="105" selection-start-column="43" selection-end-line="105" selection-end-column="43" />
           <folding />
         </state>
