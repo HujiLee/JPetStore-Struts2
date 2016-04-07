@@ -6,7 +6,7 @@
 
 <struts>
 
-    <!--<constant name="struts.custom.i18n.resources" value="jpetstore"></constant>-->
+    <constant name="struts.custom.i18n.resources" value="jpetstore"></constant>
 
     <package name="default" namespace="/" extends="struts-default">
 

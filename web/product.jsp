@@ -8,6 +8,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <html>
 <head>
 
@@ -306,16 +307,27 @@
 <div class="w" style="margin-top: 120px;">
     <nav id="shopping-nav">
         <p></p>
+        <%--<div style="display: flex;--%>
+    <%--width: 990px;">--%>
+        <%--<% for (int i = 0; i < categoryList.size(); i++) {%>--%>
+        <%--<a href="product_getProductByCatId?product.catid=<%=categoryList.get(i).getCatid().trim()%>">--%>
+        <%--<div name="<%=categoryList.get(i).getName()%>" onclick="//$(this).find('a').click();" cateid = "<%=i+1%>">--%>
+            <%--<%=categoryList.get(i).getName()%>--%>
+        <%--</div>--%>
+
+        <%--</a>--%>
+        <%--<% }%></div>--%>
+
         <div style="display: flex;
     width: 990px;">
-        <% for (int i = 0; i < categoryList.size(); i++) {%>
-        <a href="product_getProductByCatId?product.catid=<%=categoryList.get(i).getCatid().trim()%>">
-        <div name="<%=categoryList.get(i).getName()%>" onclick="//$(this).find('a').click();" cateid = "<%=i+1%>">
-            <%=categoryList.get(i).getName()%>
+            <s:iterator value="#session.categoryInfo" var="o" status="s">
+            <a href="product_getProductByCatId?product.catid=<s:property value="#o.catid"/>">
+                <div name="<s:property value="#o.name"/>" onclick="//$(this).find('a').click();" cateid = "<s:property value="#o.catid"/>">
+                    <s:text name="%{#o.name}"></s:text>
+                </div>
+            </a>
+            </s:iterator>
         </div>
-
-        </a>
-        <% }%></div>
         <p></p>
         <script comment="focus">
             thisLoc = window.location.href;

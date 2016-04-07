@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <html>
 <head>
     <title>Sign In - JpetStore</title>
@@ -19,27 +20,6 @@
         }
     </style>
 
-    <%--<script type="text/javascript" src="jquery-1.7.2.js"></script>--%>
-
-    <%--<script type="text/javascript">--%>
-    <%--function login(){--%>
-    <%--$.post("login.do",$("#loginForm").serialize());--%>
-    <%--}--%>
-
-    <%--function judge(data){--%>
-    <%--if(data.toString().trim()=="SUCCESS"){--%>
-    <%--$.post("login.do",{username: $("#username").value.toString(),password:$("#password").value.toString(),status:"1"});--%>
-    <%--}else{--%>
-    <%--alert("登陆失败！")--%>
-    <%--}--%>
-    <%--}--%>
-
-    <%--$(document).ready(function(){--%>
-    <%--$("#loginBtn").click(login);--%>
-    <%--});--%>
-
-
-    <%--</script>--%>
     <style type="text/css">
 
 
@@ -119,7 +99,6 @@
     <script src="jQuery/jquery.md5.js"></script>
     <script src="jQuery/jquery.sha1.js"></script>
     <script type="text/javascript">
-
         function verification() {
             var vrStr = $("#vr").val().toString();
             $.post("vr", {chknumber:vrStr}, function (data, status, xObj) {  //val()函数返回的是Jquery对象，
@@ -138,13 +117,6 @@
             vrImg.setAttribute('src', 'picture?abc='+time);
         }
 
-
-
-
-
-
-
-
     </script>
 
 </head>
@@ -155,43 +127,11 @@
     <div class="w" style="
     width: 850px;
 ">
-        <%--
-        <form action="getItemByName.action" method="post">
-            <ul class="block-ul" style="
-    margin: 50px 50px;
-">
-                <li><input id="search-input" name="name" type="text" autocomplete="off"
-                           oninput="console.log('input');get_search_keywords();"
-                           onblur="console.log('blur');hideKeyword();"
-                           onfocus="showKeyword();">
-                    <ul id="select-keyword" hide="yes">
-
-                    </ul>
-
-
-                </li>
-
-                <li id="search-icon"><input type="submit" value=" " id="search-submit" style="    background-color: rgba(0,0,0,0);
-    box-shadow: none;opacity: 0;"></li>
-                <li id="cart-icon" onclick="$(this).find('a')[0].click();">
-                    <a href="makeOrder.done?purchase=1"></a>
-                </li>
-
-                <li id="user-icon"></li>
-            </ul>
-        </form>--%>
     </div>
 </div>
 <div id="nav-top" style="visibility: hidden;">
     <div class="w" style="width:1000px;">
         <nav class="nav">
-            <%--
-            <li>DOG</li>
-            <li>CAT</li>
-            <li>BIRD</li>
-            <li>FISH</li>
-            <li>REPTILE</li>
-            --%>
         </nav>
     </div>
 </div>
@@ -203,35 +143,34 @@
                     <table cellspacing="0" class="t_table" style="">
                         <tbody>
                         <tr>
-                            <td>Username</td>
+                            <td><s:text name="username"></s:text></td>
                             <td><input name="user.userid" type="text" class="fixedWidthInput" placeholder="邮箱/用户名">
                             </td>
                         </tr>
                         <tr>
-                            <td>Password</td>
+                            <td><s:text name="password"></s:text></td>
                             <td><input name="user.password" type="password" class="fixedWidthInput" .icgo></td>
                         </tr>
                         <tr>
-                            <td>Virification Code</td>
+                            <td><s:text name="vrcode"></s:text></td>
                             <td style="width: 200px;text-align: center;"><img src="picture" id="vrImg"
                                                                               style="width: 100%;cursor: pointer;"
                                                                               onclick="updateVR();"/></td>
                         </tr>
                         <tr>
-                            <td>Input What You See</td>
+                            <td><s:text name="input"></s:text></td>
                             <td style=""><input id="vr" class="fixedWidthInput" type="text" onblur="verification()"
                                                 onkeydown="//if(event.keyCode==13){verification();}" oninput="verification();"></td>
                         </tr>
                         <tr>
-                            <td><a href="userRegister.jsp">Create An Account?</a></td>
-                            <td><input id="submit" type="submit"  value="Sign In" disabled="disabled"
+                            <td><a href="userRegister.jsp"><s:text name="register"></s:text></a></td>
+                            <td><input id="submit" type="submit"  value="<s:text name='signin'/>" disabled="disabled"
                                        class="fixedWidthInput"></td>
                         </tr>
                         </tbody>
                     </table>
                     <br>
                     <br>
-                    <!--<img  src="img.vr" /><br/>-->
 
                 </form>
                 <p id="loginWarning" class="warningMsg">
@@ -246,8 +185,6 @@
                     form.style.opacity = '1.0';
                 }
                 showLogin();
-                //updateVR();
-
             </script>
         </div>
     </div>
@@ -257,11 +194,5 @@
         Copyright©2016 Jpet-store.Inc
     </p>
 </div>
-<%--ajax不支持跨域请求，要自己写JS实现--%>
-<%--<form id="loginForm">--%>
-<%--username:<input id="username" name="username" type="text"><br/>--%>
-<%--password:<input id="password" name="password" type="password"><br/>--%>
-<%--<input type="button" id="loginBtn" value="SignIn">--%>
-<%--</form>--%>
 </body>
 </html>

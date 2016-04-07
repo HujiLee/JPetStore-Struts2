@@ -15,7 +15,7 @@
     <link type="text/css" rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="otherCSS/common-pages.css">
     <script type="text/javascript" src="jquery-1.7.2.js"></script>
-    <%  List<Category> categoryList = (List<Category>) request.getSession().getAttribute("categoryInfo");
+    <% List<Category> categoryList = (List<Category>) request.getSession().getAttribute("categoryInfo");
         User user = (User) session.getAttribute("userinfo");
         System.out.println(user);
     %>
@@ -37,7 +37,7 @@
             margin: 1px 2px;
             display: block;
             /*border-radius: 5px;*/
-            box-shadow: -5px 0 5px -5px white, /*左边阴影*/ 0 -5px 5px -5px blue, /*顶部阴影*/ 0 5px 5px -5px , /*底部阴影*/ 5px 0 5px -5px black;
+            box-shadow: -5px 0 5px -5px white, /*左边阴影*/ 0 -5px 5px -5px blue, /*顶部阴影*/ 0 5px 5px -5px, /*底部阴影*/ 5px 0 5px -5px black;
         }
 
         #index-column td {
@@ -45,7 +45,6 @@
             cursor: pointer;
             border-bottom-left-radius: 6px;
             border-bottom-right-radius: 6px;
-
 
             transition: width 2s, background-color 2s;
             -moz-transition: width 2s, background-color 2s; /* Firefox 4 */
@@ -75,15 +74,7 @@
         }
 
         #index-column td a span:nth-child(2) {
-            /*font-size: 225px;
-            position: fixed;
-            right: 100%;
-            background-color: black;*/
             width: auto;
-            /*float: left;*/
-            /*display: none;*/
-            /*z-index: -5;*/
-            /*font-size: 10px;*/
         }
 
         #index-column td a span:nth-child(1) {
@@ -135,11 +126,6 @@
             background-repeat: no-repeat;
         }
 
-
-
-
-
-
         #index-column #Fish:hover {
             background-color: rgba(0, 109, 240, 1.0);
             background-image: url(images/svg/fish-white.svg);
@@ -184,102 +170,28 @@
             }
         }
 
-        function overTd(me) {
-            //console.log('over-'+me.id);
-            //console.log('over');
-
-
-            //console.log(sp1[0]);
-            //.log(sp2[0]);
-
-
-            /*
-             var contn= $(me).attr('counthide');
-             var countCirclr=0;
-             while(contn=='0'&&countCirclr<1000)
-             {
-             if((td.width()-sp1.width())>sp2.width())
-             {
-             sp2.fadeIn();
-             $(me).attr('counthide','1');
-             contn=$(me).attr('counthide');
-
-             }
-             countCirclr++;
-
-             }
-             if(countCirclr>=1000){
-             sp2.fadeIn();
-             }*/
-            //循环太费钱
-
-
-            //$('#hide-'+me.id).fadeIn();
-            // $('#hide-'+me.id).css('font-size','inherit');
-            //return;
-
-        }
-
-        /*
-         $(function () {
-         $('#index-column').find('td').mouseenter(function () {
-         console.log(this);
-         //counti = $(me).attr('counthide');
-         $('#' + this.id).css('width', '40%');
-         others = $('#index-column td').not('#' + this.id);
-         others.css('width', '15%');
-
-         td = $(this);
-         sp1 = $(this).find('span:nth-child(1)');
-         sp2 = $(this).find('span:nth-child(2)');
-         sp2.fadeIn();
-         }
-         )
-         })*/
-        //上面这个绑定好像有失效的时候
-
-
         function inTd(me) {
-            /*
-             counti = $(me).attr('counthide');
-             if(counti=='0'){*/
             $('#' + me.id).css('width', '40%');
             others = $('#index-column td').not('#' + me.id);
             others.css('width', '15%');
-
-            /*td = $(me);
-             sp1 = $(me).find('span:nth-child(1)');
-             sp2 = $(me).find('span:nth-child(2)');
-             sp2.fadeIn();
-             $(me).attr('counthide','1');
-             }
-             else{
-             return;
-             }*/
-
-
         }
+
         function clickTd(me) {
-            //console.log('clock-'+me.id);
-            //$('#'+me.id).children()[0].click();//必须确保里面只有一个<a> 否则失效= =
             $('#' + me.id).find('a')[0].click();
         }
+
         function outTd(me) {
-            /*
-             counti = $(me).attr('counthide');
-             if(counti=='1') {*/
             $('#index-column td').css('width', '');
             $('#hide-' + me.id).css('display', 'none');
-            /*$(me).attr('counthide', '0');
-             }*/
+
         }
 
     </script>
+
 </head>
 <body>
 <div class="header">
     <script src="OtherJs/header.js"></script>
-
 
     <div class="w" style="
     width: 850px;
